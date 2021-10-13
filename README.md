@@ -2,9 +2,6 @@
 
 ## Active Service
 
-KMS_activation_key you can reference here: 
-[KMS client activation and product keys](https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys)
-
 ### Active Windows
 Open command prompt (cmd) with Administrator mode
 ```
@@ -14,6 +11,8 @@ slmgr -skms {server_ip}
 slmgr -ato
 slmgr -dlv
 ```
+KMS_activation_key you can reference here: 
+[KMS client activation and product keys](https://docs.microsoft.com/en-us/windows-server/get-started/kms-client-activation-keys)
 
 ### Active Office
 ```
@@ -22,7 +21,7 @@ cscript ospp.vbs /inpkey:{KMS_acrivation_key}
 cscript ospp.vbs /sethst:{server_ip}
 cscript ospp.vbs /act
 ```
-
+KMS_activation_key you can reference here: [GVLKs for KMS and Active Directory-based activation of Office, Project, and Visio](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/gvlks)
 
 ## Server Setup
 Please install docker in your server
